@@ -1,0 +1,60 @@
+title: object
+
+icon: 🖼
+
+status:
+  draft: true
+  listed: true
+
+columns:
+  - width: 1/3
+    fields:
+#      cover: fields/cover
+      headline:
+        type: text
+        placeholder: "{{ page.title }}"
+        help: titre de l'objet
+#      subheadline:
+#        type: text
+      text:
+        type: writer
+      tags: true
+      infoObject:
+        type: text
+        label: Object
+      infoMaterial:
+        type: text
+        label: Material
+      infoDate:
+        type: text
+        label: Date
+      infoLocation:
+        type: text
+        label: Location
+      infoMade_in:
+        type: text
+        label: Made_in
+      infoPrice:
+        type: text
+        label: Price
+      infoDimensions:
+        type: text
+        label: Dimensions
+      infoLoan:
+        type: text
+        label: Loan
+
+  - width: 2/3
+    sections:
+      images:
+        type: files
+        multiple: false
+        layout: cards
+        template: image
+        info: "{{ file.dimensions }}"
+        size: large
+        required: true
+        image:
+          ratio: 3/1
+          cover: true
+
