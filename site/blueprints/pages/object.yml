@@ -10,10 +10,10 @@ columns:
   - width: 1/3
     fields:
 #      cover: fields/cover
-      headline:
+      id:
         type: text
-        placeholder: "{{ page.title }}"
-        help: titre de l'objet
+        placeholder: "{{ page.id }}"
+        help: "identifiant numérique de l'objet (ex: 001)"
 #      subheadline:
 #        type: text
       text:
@@ -26,8 +26,10 @@ columns:
         type: text
         label: Material
       infoDate:
-        type: text
-        label: Date
+        type: date
+        display: YYYY
+        step: year
+        calendar: false
       infoLocation:
         type: text
         label: Location
