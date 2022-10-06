@@ -4,13 +4,12 @@
 # More about pages sections: https://getkirby.com/docs/reference/panel/sections/pages
 type: pages
 label: objects
-parent: kirby.page("listOfObject")
-size: small
-info: "{{ page.images.count }} image(s)"
+parent: kirby.page("listofobject")
+size: tiny
+info: "{{ page.content.id }}"
 layout: cards
 template: object
 empty: pas d'objets
 image:
-  query: page.cover
   cover: true
   ratio: 5/4

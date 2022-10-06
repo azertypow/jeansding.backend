@@ -6,8 +6,16 @@
 
 # The layout of this form has two columns:
 columns:
-  # The first column has one section for the subpages of the `listOfObjects` page in card layout
+  # The first column has one section for the subpages of the `listofobject` page in card layout
   # It reuses the pages section defined in `/site/blueprints/sections/objects.yml`
   - width: 1/2
     sections:
-      albums: sections/objects
+      objects:
+        headline: Archive
+        type: pages
+        image:
+          cover: true
+        status: listed
+        templates: listofobject
+        layout: cards
+        size: medium

@@ -2,6 +2,9 @@ title: object
 
 icon: 🖼
 
+options:
+  preview: false
+
 status:
   draft: true
   listed: true
@@ -47,7 +50,8 @@ columns:
         label: Loan
 
   - width: 2/3
-    sections:
+
+    fields:
       images:
         type: files
         multiple: false
@@ -59,4 +63,6 @@ columns:
         image:
           ratio: 3/1
           cover: true
-
+      vimeoLink:
+        type: url
+        label: Lien Vimeo
