@@ -11,7 +11,7 @@ columns:
   - width: 1/2
     sections:
       objects:
-        headline: Archive
+        headline: Invotory
         type: pages
         image:
           cover: true
