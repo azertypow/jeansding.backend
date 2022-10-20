@@ -1,0 +1,17 @@
+title: Video and Talk
+
+icon: 🖼
+
+options:
+  preview: false
+
+status:
+  draft: true
+  listed: true
+
+columns:
+  - width: 1/3
+    fields:
+      vimeoLink:
+        type: url
+        label: Lien Vimeo

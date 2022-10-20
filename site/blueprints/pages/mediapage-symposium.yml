@@ -1,0 +1,34 @@
+title: Media | symposium
+
+icon: 🖼
+
+options:
+  preview: false
+  changeSlug: false
+  changeStatus: false
+  changeTemplate: false
+  changeTitle: false
+#  create: false
+  delete: false
+  duplicate: false
+  read: true
+  sort: false
+  update: true
+
+status:
+  draft: true
+  listed: true
+
+columns:
+  - width: 1/1
+    fields:
+      text:
+        type: writer
+        help: "Intro text description"
+
+  - width: 2/3
+    sections:
+      video_and_talk:
+        extends: sections/listofvideoandtalk
+        label: Video and talk
+#      articles:

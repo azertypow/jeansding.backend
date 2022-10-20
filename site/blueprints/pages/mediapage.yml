@@ -17,15 +17,26 @@ options:
   sort: false
   update: true
 
-# Here we extend two sections which are defined in `/site/blueprints/sections/albums.yml`
-# They differ in their page status and the headline.
 sections:
-  drafts:
-    extends: sections/objects
-    label: Drafts
-    status: draft
-
-  listed:
-    extends: sections/objects
-    label: Published Albums
-    status: listed
+  pages:
+    template:
+      - mediapage-symposium
+#      - mediapage-artiste_video
+#      - mediapage-projects
+#      - mediapage-articles
+#  symposium:
+#    extends: sections/symposium
+#    label: Symposium
+##    status: listed
+#  artist_videos:
+#    extends: sections/artist_videos
+#    label: Artist videos
+##    status: listed
+#  projects:
+#    extends: sections/projects
+#    label: Projects
+##    status: listed
+#  articles:
+#    extends: sections/articles
+#    label: Articles
+##    status: listed
