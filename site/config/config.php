@@ -11,6 +11,13 @@ return [
     'debug' => true,
     'routes' => [
         [
+            'pattern' => '/',
+            'action'  => function () {
+                header('Location: /panel');
+                exit();
+            }
+        ],
+        [
             'pattern' => 'get/itemList',
             'action'  => function () {
                 header("Access-Control-Allow-Origin: *");

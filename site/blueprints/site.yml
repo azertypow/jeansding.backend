@@ -19,3 +19,15 @@ columns:
         templates: listofobject
         layout: cards
         size: medium
+
+  - width: 1/2
+    sections:
+      media:
+        headline: Media
+        type: pages
+        image:
+          cover: true
+        status: listed
+        templates: mediapage
+        layout: cards
+        size: medium
