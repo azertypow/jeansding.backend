@@ -1,0 +1,76 @@
+{
+  "categories": [
+    {
+      "name": "Accessories"
+    },
+    {
+      "name": "Advertising"
+    },
+    {
+      "name": "Pet Supplies"
+    },
+    {
+      "name": "Apparatus"
+    },
+    {
+      "name": "Bags"
+    },
+    {
+      "name": "Books"
+    },
+    {
+      "name": "Clothing"
+    },
+    {
+      "name": "Cosmetics"
+    },
+    {
+      "name": "Decoration"
+    },
+    {
+      "name": "Dishes"
+    },
+    {
+      "name": "Drinks"
+    },
+    {
+      "name": "Edibles"
+    },
+    {
+      "name": "Ligthers"
+    },
+    {
+      "name": "Home"
+    },
+    {
+      "name": "Furnitures"
+    },
+    {
+      "name": "Magazines"
+    },
+    {
+      "name": "Haberdasheries"
+    },
+    {
+      "name": "Music"
+    },
+    {
+      "name": "Others"
+    },
+    {
+      "name": "Orthotic"
+    },
+    {
+      "name": "Packaging"
+    },
+    {
+      "name": "Shoes"
+    },
+    {
+      "name": "Stationery"
+    },
+    {
+      "name": "Toys"
+    }
+  ]
+}
