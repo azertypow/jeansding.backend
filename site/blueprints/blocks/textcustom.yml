@@ -1,0 +1,21 @@
+name: field.blocks.text.name
+icon: text
+wysiwyg: true
+preview: text
+fields:
+  text:
+    type: writer
+    nodes:
+      - paragraph
+      - heading
+
+    placeholder: field.blocks.text.placeholder
+    marks:
+      - bold
+      - italic
+      - underline
+      - strike
+      - link
+      - mail
+      - footnote
+

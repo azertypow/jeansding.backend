@@ -1,0 +1,13 @@
+{
+  "name": "azertypow/kirby-writer-marks",
+  "description": "forked from ohannschopplich/kirby-writer-marks",
+  "type": "kirby-plugin",
+  "license": "MIT",
+  "require": {
+    "php": ">=8.1.0 <8.2.0",
+    "getkirby/composer-installer": "^1.1"
+  },
+  "extra": {
+    "installer-name": "kirby-writer-marks"
+  }
+}

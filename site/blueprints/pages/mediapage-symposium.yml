@@ -23,8 +23,11 @@ columns:
   - width: 1/1
     fields:
       text:
-        type: writer
+        type: blocks
         help: "Intro text description"
+        fieldsets:
+          - gallery
+          - textcustom
 
   - width: 2/3
     sections:

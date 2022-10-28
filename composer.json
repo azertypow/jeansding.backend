@@ -24,8 +24,15 @@
   "require": {
     "php": ">=7.4.0 <8.2.0",
     "getkirby/cms": "^3.6",
-    "ext-json": "*"
+    "ext-json": "*",
+    "azertypow/kirby-writer-marks": "dev-main"
   },
+  "repositories": [
+    {
+      "type":"vcs",
+      "url": "https://github.com/azertypow/kirby-writer-marks"
+    }
+  ],
   "config": {
     "allow-plugins": {
       "getkirby/composer-installer": true
