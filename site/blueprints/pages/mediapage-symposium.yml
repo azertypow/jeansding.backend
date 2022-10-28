@@ -19,19 +19,63 @@ status:
   draft: true
   listed: true
 
-columns:
-  - width: 1/1
-    fields:
-      text:
-        type: blocks
-        help: "Intro text description"
-        fieldsets:
-          - gallery
-          - textcustom
+tabs:
+  intro:
+    label: Description
+    icon: text
+    columns:
+      - width: 2/3
+        fields:
+          description_title:
+            label: Title
+            type: text
+          description_subtitle:
+            label: Subtitle
+            type: text
+      - width: 1/3
+        fields:
+          description_author:
+            label: Author
+            type: text
+      - width: 1/1
+        fields:
+          text:
+            label: introduction content
+            type: blocks
+            help: "Intro text description"
+            fieldsets:
+              - gallery
+              - textcustom
+              - heading
 
-  - width: 2/3
-    sections:
-      video_and_talk:
-        extends: sections/listofvideoandtalk
-        label: Video and talk
-#      articles:
+
+  video_and_talk:
+    label: Video and Talks
+    icon: text
+    columns:
+      - width: 2/3
+        fields:
+          video_and_talk_title:
+            label: Title
+            type: text
+      - width: 1/1
+        sections:
+          video_and_talk:
+            extends: sections/listofvideoandtalk
+            label: Video and talk
+
+
+  article:
+    label: Article
+    icon: text
+    columns:
+      - width: 2/3
+        fields:
+          article_title:
+            label: Title
+            type: text
+      - width: 1/1
+        sections:
+          article:
+            extends: sections/listofvideoandtalk
+            label: Video and talk
