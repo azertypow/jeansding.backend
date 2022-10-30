@@ -15,3 +15,12 @@ columns:
       vimeoLink:
         type: url
         label: Lien Vimeo
+      category:
+        label: Category
+        type: multiselect
+        options:
+          type: api
+          url: https://raw.githubusercontent.com/azertypow/jeansding.backend/main/categories.json
+          query: categories
+          text: "{{ item.name }}"
+          value: "{{ item.name.slug }}"
