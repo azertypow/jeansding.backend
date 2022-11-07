@@ -1,0 +1,11 @@
+title: Articles
+
+options:
+  preview: false
+
+status:
+  draft: false
+
+columns:
+  - width: 1/1
+    sections:

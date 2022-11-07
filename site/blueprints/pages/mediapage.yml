@@ -19,6 +19,8 @@ options:
 
 sections:
   pages:
+    image: false
+    layout: cardlets
     template:
       - mediapage-symposium
 #      - mediapage-artiste_video

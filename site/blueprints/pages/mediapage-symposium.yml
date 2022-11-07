@@ -20,6 +20,16 @@ status:
   listed: true
 
 tabs:
+  content:
+    label: pages
+    sections:
+      pages:
+        label: Symposium subpages
+        image: false
+        layout: cardlets
+        template:
+          - video_and_talks
+
   intro:
     label: Description
     icon: text
@@ -47,35 +57,3 @@ tabs:
               - gallery
               - textcustom
               - heading
-
-
-  video_and_talk:
-    label: Video and Talks
-    icon: text
-    columns:
-      - width: 2/3
-        fields:
-          video_and_talk_title:
-            label: Title
-            type: text
-      - width: 1/1
-        sections:
-          video_and_talk:
-            extends: sections/listofvideoandtalk
-            label: Video and talk
-
-
-  article:
-    label: Article
-    icon: text
-    columns:
-      - width: 2/3
-        fields:
-          article_title:
-            label: Title
-            type: text
-      - width: 1/1
-        sections:
-          article:
-            extends: sections/listofvideoandtalk
-            label: Video and talk
