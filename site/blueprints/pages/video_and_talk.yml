@@ -14,7 +14,7 @@ columns:
     fields:
       vimeoLink:
         type: url
-        label: Lien Vimeo
+        label: Vimeo Link
       category:
         label: Category
         type: multiselect

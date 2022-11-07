@@ -65,4 +65,4 @@ columns:
           cover: true
       vimeoLink:
         type: url
-        label: Lien Vimeo
+        label: Vimeo Link
