@@ -27,6 +27,7 @@ echo  json_encode([
     })->data(),
     'children'              => $symposium->children()->map(function ($child) {
       return [
+        'title'                 => $child->title()->value,
         'vimeoLink'             => $child->vimeoLink()->value,
         'author'                => $child->author()->value,
         'category'              => $child->category()->value,
