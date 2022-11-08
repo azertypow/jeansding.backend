@@ -1,0 +1,59 @@
+title: Media | Article
+
+icon: 🖼
+
+options:
+  preview: false
+  changeSlug: false
+  changeStatus: false
+  changeTemplate: false
+  changeTitle: false
+  #  create: false
+  delete: false
+  duplicate: false
+  read: true
+  sort: false
+  update: true
+
+status:
+  draft: true
+  listed: true
+
+tabs:
+  content:
+    label: pages
+    sections:
+      pages:
+        label: Project subpages
+        image: false
+        layout: cardlets
+        template:
+          - element-article
+
+  intro:
+    label: Description
+    icon: text
+    columns:
+      - width: 2/3
+        fields:
+          description_title:
+            label: Title
+            type: text
+          description_subtitle:
+            label: Subtitle
+            type: text
+      - width: 1/3
+        fields:
+          description_author:
+            label: Author
+            type: text
+      - width: 1/1
+        fields:
+          text:
+            label: introduction content
+            type: blocks
+            help: "Intro text description"
+            fieldsets:
+              - gallery
+              - textcustom
+              - heading

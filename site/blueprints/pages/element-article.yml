@@ -1,0 +1,49 @@
+title: Article
+
+icon: 🖼
+
+options:
+  preview: false
+
+status:
+  draft: true
+  listed: true
+
+columns:
+  - width: 1/3
+    fields:
+      author:
+        type: text
+        label: Author
+      category:
+        label: Category
+        type: multiselect
+        options:
+          type: api
+          url: https://raw.githubusercontent.com/azertypow/jeansding.backend/main/categories.json
+          query: categories
+          text: "{{ item.name }}"
+          value: "{{ item.name.slug }}"
+  - width: 2/3
+    fields:
+      description:
+        type: writer
+        nodes:
+          - paragraph
+          - heading
+        marks:
+          - bold
+          - italic
+          - underline
+          - strike
+          - link
+          - mail
+  - width: 1/1
+    fields:
+      article_content:
+        label: Article
+        type: blocks
+        help: "Article text content"
+        fieldsets:
+          - gallery
+          - textcustom

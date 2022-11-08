@@ -23,22 +23,6 @@ sections:
     layout: cardlets
     template:
       - mediapage-symposium
-#      - mediapage-artiste_video
-#      - mediapage-projects
-#      - mediapage-articles
-#  symposium:
-#    extends: sections/symposium
-#    label: Symposium
-##    status: listed
-#  artist_videos:
-#    extends: sections/artist_videos
-#    label: Artist videos
-##    status: listed
-#  projects:
-#    extends: sections/projects
-#    label: Projects
-##    status: listed
-#  articles:
-#    extends: sections/articles
-#    label: Articles
-##    status: listed
+      - mediapage-artist_videos
+      - mediapage-projects
+      - mediapage-articles

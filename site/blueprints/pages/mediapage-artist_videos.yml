@@ -1,4 +1,4 @@
-title: Media | symposium
+title: Media | Artist videos
 
 icon: 🖼
 
@@ -8,7 +8,7 @@ options:
   changeStatus: false
   changeTemplate: false
   changeTitle: false
-#  create: false
+  #  create: false
   delete: false
   duplicate: false
   read: true
@@ -24,11 +24,11 @@ tabs:
     label: pages
     sections:
       pages:
-        label: Symposium subpages
+        label: Artiste video subpages
         image: false
         layout: cardlets
         template:
-          - element-video_and_talks
+          - element-video
 
   intro:
     label: Description
