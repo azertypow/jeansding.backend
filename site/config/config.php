@@ -7,6 +7,9 @@
  * This setting must be set to false in production.
  * All config options: https://getkirby.com/docs/reference/system/options
  */
+
+use Kirby\Cms\Page;
+
 return [
     'debug' => true,
     'routes' => [
@@ -23,6 +26,19 @@ return [
                 header("Access-Control-Allow-Origin: *");
 
                 return page('listofobject');
+            }
+        ],
+        [
+            'pattern' => 'get/projects',
+            'action'  => function () {
+                header("Access-Control-Allow-Origin: *");
+
+                return new Page([
+                    'slug' => 'projects',
+                    'template' => 'projects',
+                    'content' => [
+                    ]
+                ]);
             }
         ],
     ]
