@@ -16,6 +16,8 @@ $projects       = $site->children()->get('mediapage')->children()->get('mediapag
 //print_r($symposium);
 //echo '</pre>';
 
+// todo: clean code: get title and sort dynamic
+
 echo  json_encode([
 
   'symposium'     => [
