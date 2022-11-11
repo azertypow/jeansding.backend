@@ -7,10 +7,10 @@ require_once 'site/Utils/getImageData.php';
 
 
 
-$symposium = $site->children()->get('mediapage')->children()->get('mediapage/symposium');
-//artist-videos
-//articles
-//projects
+$symposium      = $site->children()->get('mediapage')->children()->get('mediapage/symposium');
+$artistVideos   = $site->children()->get('mediapage')->children()->get('mediapage/artist-videos');
+$articles       = $site->children()->get('mediapage')->children()->get('mediapage/articles');
+$projects       = $site->children()->get('mediapage')->children()->get('mediapage/projects');
 
 //echo '<pre>';
 //print_r($symposium);
@@ -19,6 +19,7 @@ $symposium = $site->children()->get('mediapage')->children()->get('mediapage/sym
 echo  json_encode([
 
   'symposium'     => [
+    'title'                 => $symposium->title()->value,
     'description_title'     => $symposium->description_title()->value,
     'description_subtitle'  => $symposium->description_subtitle()->value,
     'description_author'    => $symposium->description_author()->value,
@@ -38,9 +39,15 @@ echo  json_encode([
       ];
     })->data()
   ],
-  'artist-videos' => '',
-    'articles'    => '',
-    'projects'    => '',
+  'artist-videos' => [
+    'title'                 => $artistVideos->title()->value,
+  ],
+  'articles'      => [
+    'title'                 => $articles->title()->value,
+  ],
+  'projects'      => [
+    'title'                 => $projects->title()->value,
+  ],
 
 ]);
 
