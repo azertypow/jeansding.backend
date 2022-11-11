@@ -11,7 +11,7 @@ columns:
   - width: 1/2
     sections:
       objects:
-        headline: Invotory
+        headline: Inventory
         type: pages
         image:
           cover: true
@@ -23,7 +23,7 @@ columns:
   - width: 1/2
     sections:
       media:
-        headline: Media
+        headline: Projects
         type: pages
         image:
           cover: true
