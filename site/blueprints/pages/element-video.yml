@@ -29,6 +29,9 @@ columns:
           value: "{{ item.name.slug }}"
   - width: 2/3
     fields:
+      subtitle:
+        type: text
+        label: Subtitle
       description:
         type: writer
         nodes:

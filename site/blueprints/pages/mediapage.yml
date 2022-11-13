@@ -19,8 +19,9 @@ options:
 
 sections:
   pages:
-    image: false
-    layout: cardlets
+    image:
+      cover: true
+    layout: cards
     template:
       - mediapage-symposium
       - mediapage-artist_videos
