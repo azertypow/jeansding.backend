@@ -31,6 +31,7 @@ echo  json_encode([
     'children'              => $symposium->children()->map(function ($child) {
       return [
         'title'                 => $child->title()->value,
+        'uid'                   => $child->uid(),
         'subtitle'              => $child->subtitle()->value,
         'vimeoLink'             => $child->vimeoLink()->value,
         'author'                => $child->author()->value,
@@ -53,6 +54,7 @@ echo  json_encode([
     'children'              => $artistVideos->children()->map(function ($child) {
       return [
         'title'                 => $child->title()->value,
+        'uid'                   => $child->uid(),
         'subtitle'              => $child->subtitle()->value,
         'vimeoLink'             => $child->vimeoLink()->value,
         'author'                => $child->author()->value,
@@ -75,6 +77,7 @@ echo  json_encode([
     'children'              => $denimPop->children()->map(function ($child) {
       return [
         'title'                 => $child->title()->value,
+        'uid'                   => $child->uid(),
         'subtitle'              => $child->subtitle()->value,
         'vimeoLink'             => $child->vimeoLink()->value,
         'author'                => $child->author()->value,
@@ -98,6 +101,7 @@ echo  json_encode([
     'children'              => $projects->children()->map(function ($child) {
       return [
         'title'                 => $child->title()->value,
+        'uid'                   => $child->uid(),
         'subtitle'              => $child->subtitle()->value,
         'vimeoLink'             => $child->vimeoLink()->value,
         'author'                => $child->author()->value,
