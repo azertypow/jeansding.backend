@@ -25,3 +25,4 @@ sections:
     extends: sections/objects
     label: Published Albums
     status: listed
+    limit: 50
