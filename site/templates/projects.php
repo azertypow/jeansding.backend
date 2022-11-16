@@ -9,8 +9,8 @@ require_once 'site/Utils/getImageData.php';
 
 $symposium      = $site->children()->get('mediapage')->children()->get('mediapage/symposium');
 $artistVideos   = $site->children()->get('mediapage')->children()->get('mediapage/artist-videos');
-$denimPop       = $site->children()->get('mediapage')->children()->get('mediapage/articles');
-$projects       = $site->children()->get('mediapage')->children()->get('mediapage/projects');
+$denimPop       = $site->children()->get('mediapage')->children()->get('mediapage/denimpop');
+$projects       = $site->children()->get('mediapage')->children()->get('mediapage/exhibitions');
 
 //echo '<pre>';
 //print_r($symposium);
