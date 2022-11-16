@@ -20,7 +20,7 @@ $projects       = $site->children()->get('mediapage')->children()->get('mediapag
 
 echo  json_encode([
 
-  'symposium'     => [
+  $symposium->uid() => [
     'title'                 => $symposium->title()->value,
     'description_title'     => $symposium->description_title()->value,
     'description_subtitle'  => $symposium->description_subtitle()->value,
@@ -43,7 +43,7 @@ echo  json_encode([
       ];
     })->data()
   ],
-  'artist-videos' => [
+  $artistVideos->uid() => [
     'title'                 => $artistVideos->title()                 ->value,
     'description_title'     => $artistVideos->description_title()     ->value,
     'description_subtitle'  => $artistVideos->description_subtitle()  ->value,
@@ -66,7 +66,7 @@ echo  json_encode([
       ];
     })->data()
   ],
-  'Denimpop'      => [
+  $denimPop->uid()      => [
     'title'                 => $denimPop->title()                 ->value,
     'description_title'     => $denimPop->description_title()     ->value,
     'description_subtitle'  => $denimPop->description_subtitle()  ->value,
@@ -90,7 +90,7 @@ echo  json_encode([
     })->data()
 
   ],
-  'projects'      => [
+  $projects->uid()      => [
     'title'                 => $projects->title()->value,
     'description_title'     => $projects->description_title()     ->value,
     'description_subtitle'  => $projects->description_subtitle()  ->value,
