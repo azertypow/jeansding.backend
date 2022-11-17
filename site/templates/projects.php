@@ -28,8 +28,9 @@ echo  json_encode([
     'text'                  => $symposium->text()->toBlocks()->map(function($block){
       return $block->toHtml();
     })->data(),
-    'children'              => $symposium->children()->map(function ($child) {
+    'children'              => $symposium->children()->map(function ($child) use ($symposium) {
       return [
+        'parentUid'             => $symposium->uid(),
         'title'                 => $child->title()->value,
         'uid'                   => $child->uid(),
         'subtitle'              => $child->subtitle()->value,
@@ -51,8 +52,9 @@ echo  json_encode([
     'text'                  => $artistVideos->text()->toBlocks()->map(function($block){
       return $block->toHtml();
     })->data(),
-    'children'              => $artistVideos->children()->map(function ($child) {
+    'children'              => $artistVideos->children()->map(function ($child) use ($artistVideos) {
       return [
+        'parentUid'             => $artistVideos->uid(),
         'title'                 => $child->title()->value,
         'uid'                   => $child->uid(),
         'subtitle'              => $child->subtitle()->value,
@@ -74,8 +76,9 @@ echo  json_encode([
     'text'                  => $denimPop->text()->toBlocks()->map(function($block){
       return $block->toHtml();
     })->data(),
-    'children'              => $denimPop->children()->map(function ($child) {
+    'children'              => $denimPop->children()->map(function ($child) use ($denimPop) {
       return [
+        'parentUid'             => $denimPop->uid(),
         'title'                 => $child->title()->value,
         'uid'                   => $child->uid(),
         'subtitle'              => $child->subtitle()->value,
@@ -98,8 +101,9 @@ echo  json_encode([
     'text'                  => $projects->text()->toBlocks()->map(function($block){
       return $block->toHtml();
     })->data(),
-    'children'              => $projects->children()->map(function ($child) {
+    'children'              => $projects->children()->map(function ($child) use ($projects) {
       return [
+        'parentUid'             => $projects->uid(),
         'title'                 => $child->title()->value,
         'uid'                   => $child->uid(),
         'subtitle'              => $child->subtitle()->value,
