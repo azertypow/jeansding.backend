@@ -30,6 +30,7 @@ echo
       'infoDimensions'    => $objet->content()->infoDimensions()->value(),
       'infoLoan'          => $objet->content()->infoLoan()->value(),
       'img'               => getImageData($objet->images()->data()),
+      'vimeoLink'         => $objet->content()->vimeoLink()->value,
     ];
   })->data());
 
