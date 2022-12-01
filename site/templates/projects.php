@@ -37,6 +37,7 @@ echo  json_encode([
         'vimeoLink'             => $child->vimeoLink()->value,
         'author'                => $child->author()->value,
         'category'              => $child->category()->value,
+        'Linkwith'              => $child->Linkwith()->value,
         'description'           => $child->description()->value,
         'article_content'       => $child->article_content()->toBlocks()->map(function($block){
           return $block->toHtml();
@@ -61,6 +62,7 @@ echo  json_encode([
         'vimeoLink'             => $child->vimeoLink()->value,
         'author'                => $child->author()->value,
         'category'              => $child->category()->value,
+        'Linkwith'              => $child->Linkwith()->value,
         'description'           => $child->description()->value,
         'article_content'       => $child->article_content()->toBlocks()->map(function($block){
           return $block->toHtml();
@@ -85,6 +87,7 @@ echo  json_encode([
         'vimeoLink'             => $child->vimeoLink()->value,
         'author'                => $child->author()->value,
         'category'              => $child->category()->value,
+        'Linkwith'              => $child->Linkwith()->value,
         'description'           => $child->description()->value,
         'article_content'       => $child->article_content()->toBlocks()->map(function($block){
           return $block->toHtml();
@@ -110,6 +113,7 @@ echo  json_encode([
         'vimeoLink'             => $child->vimeoLink()->value,
         'author'                => $child->author()->value,
         'category'              => $child->category()->value,
+        'Linkwith'              => $child->Linkwith()->value,
         'description'           => $child->description()->value,
         'article_content'       => $child->article_content()->toBlocks()->map(function($block){
           return $block->toHtml();

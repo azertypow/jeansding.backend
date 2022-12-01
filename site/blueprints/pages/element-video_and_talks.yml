@@ -35,7 +35,7 @@ columns:
           url: https://jeansdinge.sdrvl.ch/get/list_of_id_objects
           query: objectsID
           text: "{{ item.name }}"
-          value: "{{ item.name.slug }}"
+          value: "{{ item.slug }}"
 
   - width: 2/3
     fields:
