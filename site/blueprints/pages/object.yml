@@ -40,7 +40,7 @@ columns:
         type: date
         display: YYYY
         step: year
-        calendar: false
+        calendar: true
       infoLocation:
         type: text
         label: Location
