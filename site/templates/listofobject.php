@@ -18,7 +18,7 @@ echo
       'title'             => $objet->content()->title()     ->value(),
       'id'                => $objet->content()->id()        ->value(),
       'text'              => $objet->content()->text()      ->value(),
-      'category'          => explode(',', $objet   ->content()->category()->value()),
+      'category'          => trim( explode(',', $objet   ->content()->category()->value()) ),
       'infoObject'        => $objet->content()->infoObject()->value(),
       'infoMaterial'      => explode(',',
                              $objet->content()->infoMaterial()->value()
