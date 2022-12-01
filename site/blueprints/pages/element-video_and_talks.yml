@@ -27,6 +27,16 @@ columns:
           query: categories
           text: "{{ item.name }}"
           value: "{{ item.name.slug }}"
+      linkWith:
+        label: Link with objects
+        type: multiselect
+        options:
+          type: api
+          url: https://jeansdinge.sdrvl.ch/get/list_of_id_objects.json
+          query: objectsID
+          text: "{{ item.name }}"
+          value: "{{ item.name.slug }}"
+
   - width: 2/3
     fields:
       subtitle:

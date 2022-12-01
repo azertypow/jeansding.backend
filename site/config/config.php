@@ -41,5 +41,18 @@ return [
                 ]);
             }
         ],
+        [
+            'pattern' => 'get/list_of_id_objects',
+            'action'  => function () {
+                header("Access-Control-Allow-Origin: *");
+
+                return new Page([
+                    'slug' => 'listofidobjects',
+                    'template' => 'list_of_id_objects',
+                    'content' => [
+                    ]
+                ]);
+            }
+        ],
     ]
 ];
