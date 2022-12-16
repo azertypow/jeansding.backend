@@ -41,6 +41,20 @@ return [
                 ]);
             }
         ],
+
+        [
+            'pattern' => 'get/contributors',
+            'action'  => function () {
+                header("Access-Control-Allow-Origin: *");
+
+                return new Page([
+                    'slug' => 'contributors',
+                    'template' => 'contributors',
+                    'content' => [
+                    ]
+                ]);
+            }
+        ],
         [
             'pattern' => 'get/list_of_id_objects',
             'action'  => function () {
