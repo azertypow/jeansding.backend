@@ -31,3 +31,15 @@ columns:
         templates: mediapage
         layout: cards
         size: medium
+
+  - width: 1/2
+      sections:
+        contributors:
+          headline: Contributors
+          type: pages
+          image:
+            cover: true
+          status: listed
+          templates: contributors
+          layout: cards
+          size: medium

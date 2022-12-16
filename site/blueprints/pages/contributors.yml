@@ -1,0 +1,38 @@
+# Each page blueprint must have a title, the title may be different from the file name
+title: Contributors
+
+# Each page can have an icon that is shown in page listings when no preview image is available.
+icon: 🖼
+
+options:
+  preview: false
+  changeSlug: false
+  changeStatus: false
+  changeTemplate: false
+  changeTitle: false
+  create: false
+  delete: false
+  duplicate: false
+  read: true
+  sort: false
+  update: true
+
+fields:
+  activityList:
+    type: tags
+  contributors:
+    label: Contributors
+    type: structure
+    fields:
+      name:
+        label: Name
+        type: text
+      first_name:
+        label: First name
+        type: text
+      activity:
+        label: Category
+        type: multiselect
+        options:
+          type: query
+          query: site.find('Contributors').activityList.split
