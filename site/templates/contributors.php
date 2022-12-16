@@ -7,6 +7,7 @@ $contributorsPage       = $site->children()->get('contributors');
 
 echo
 json_encode([
+  'activityList' => $contributorsPage->activityList()->split(),
   'contributors' => $contributorsPage->contributors()->toStructure()->map(function ($contributor) {
     return [
       'name'        => $contributor->name()->value(),
