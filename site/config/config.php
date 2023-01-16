@@ -22,9 +22,11 @@ return [
             }
         ],
         [
-            'pattern' => 'get/imageData/(:any)/(:any)',
-            'action'  => function ($page, $fileName) {
+            'pattern' => 'get/imageData',
+            'action'  => function () {
                 header("Access-Control-Allow-Origin: *");
+                $page = get('page');
+                $fileName = get('file');
 
                 return getJsonEncodeImageData(
                     page(urldecode($page))->file($fileName)
