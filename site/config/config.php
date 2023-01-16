@@ -9,6 +9,7 @@
  */
 
 use Kirby\Cms\Page;
+require_once 'site/Utils/getImageData.php';
 
 return [
     'debug' => true,
@@ -18,6 +19,16 @@ return [
             'action'  => function () {
                 header('Location: /panel');
                 exit();
+            }
+        ],
+        [
+            'pattern' => 'get/imageData/(:any)/(:any)',
+            'action'  => function ($page, $fileName) {
+                header("Access-Control-Allow-Origin: *");
+
+                return getJsonEncodeImageData(
+                    page(urldecode($page))->file($fileName)
+                );
             }
         ],
         [
