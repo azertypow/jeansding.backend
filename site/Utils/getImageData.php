@@ -24,7 +24,7 @@ function getJsonEncodeImageData(Kirby\Cms\File $file): array
         'height'    => $file->height(),
         'resize'    => [
             'tiny'      => $file->resize(50, null, 10)->url(),
-            'xs'        => $file->resize(300, null, 80)->url(),
+            'xs'        => $file->resize(300, null, 100)->url(),
             'small'     => $file->resize(500)->url(),
             'reg'       => $file->resize(1280)->url(),
             'large'     => $file->resize(1920)->url(),
