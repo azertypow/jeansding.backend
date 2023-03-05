@@ -19,7 +19,7 @@ options:
 
 fields:
   activityList:
-    label: Liste des activités
+    label: List of activities
     type: tags
   contributors:
     label: Contributors
