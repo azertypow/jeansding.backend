@@ -37,3 +37,13 @@ fields:
         options:
           type: query
           query: site.find('Contributors').activityList.split
+      description:
+        type: writer
+        nodes: false
+        marks:
+          - bold
+          - italic
+          - underline
+          - strike
+          - link
+          - mail
