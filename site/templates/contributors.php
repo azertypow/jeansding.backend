@@ -12,6 +12,7 @@ json_encode([
     return [
       'name'        => $contributor->name()->value(),
       'first_name'  => $contributor->first_name()->value(),
+      'description' => $contributor->description()->value(),
       'activity'    => array_map( function($tag) {
                              return trim( $tag );
                              },explode(',', $contributor->content()->activity()->value()) ),
